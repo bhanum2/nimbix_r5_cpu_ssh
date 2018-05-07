@@ -1,0 +1,30 @@
+All ML/DL frameworks live in /opt/DL; you must source an environment setup
+script before accessing them, e.g. one of the following:
+
+	source /opt/DL/caffe-bvlc/bin/caffe-activate
+	source /opt/DL/caffe-ibm/bin/caffe-activate
+	source /opt/DL/caffe-nv/bin/caffe-activate	# recommended
+	source /opt/DL/chainer/bin/chainer-activate
+	source /opt/DL/openblas/bin/openblas-activate
+	source /opt/DL/tensorflow/bin/tensorflow-activate
+	source /opt/DL/theano/bin/theano-activate
+	source /opt/DL/torch/bin/torch-activate
+
+After sourcing the environment script for the framework you wish to use,
+please read the framework-specific documentation in its respective doc[s]
+directory - e.g. one of the following:
+
+	/opt/DL/caffe-*/docs
+	/opt/DL/chainer/doc
+	/opt/DL/openblas/doc
+	/opt/DL/repo/doc
+	/opt/DL/tensorflow/doc
+	/opt/DL/theano/doc
+	/opt/DL/torch/doc
+
+Files created or updated in folders other than /data will be lost on container restore.
+
+After you have completed the demos, feel free to use the container to explore the capabilities of PowerAI. 
+If you have completed the demonstration, please help conserve resources by canceling the subscription used 
+to create this instance.  
+Thank you. 
