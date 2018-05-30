@@ -12,7 +12,7 @@
         "IBM POWER/Data Science"
     ],
     "machines": [
-        "n0"
+        "np8c1"
     ],
     "vault-types": [
         "FILE",
