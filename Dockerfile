@@ -25,12 +25,12 @@ RUN yum -y install bzip2 && yum clean all
 RUN mkdir -p /usr/lib/powerpc64le-linux-gnu
 
 RUN yum -y install wget python-devel
-RUN yum install -y openssh-server.ppc64le
+#RUN yum install -y openssh-server.ppc64le
 #RUN ssh-keygen -f /etc/ssh/ssh_host_rsa_key -N '' -t rsa
 #RUN ssh-keygen -f /etc/ssh/ssh_host_dsa_key -N '' -t dsa
 #RUN ssh-keygen -t ecdsa -f /etc/ssh/ssh_host_ecdsa_key -N ''
-RUN ssh-keygen -A
-RUN systemctl enable sshd
+#RUN ssh-keygen -A
+#RUN systemctl enable sshd
 RUN yum install -y openblas
 RUN yum install -y atlas atlas-dev
 
