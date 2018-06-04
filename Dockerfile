@@ -30,7 +30,7 @@ RUN yum -y install wget python-devel
 #RUN ssh-keygen -f /etc/ssh/ssh_host_dsa_key -N '' -t dsa
 #RUN ssh-keygen -t ecdsa -f /etc/ssh/ssh_host_ecdsa_key -N ''
 #RUN ssh-keygen -A
-#RUN systemctl enable sshd
+#RUN systemctl disable sshd
 RUN yum install -y openblas
 RUN yum install -y atlas atlas-dev
 
