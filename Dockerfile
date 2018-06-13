@@ -92,9 +92,11 @@ RUN pip install pyspark
 RUN pip install ibmseti
 RUN pip install python-resize-image
 
+COPY lib/libcuda.so.1 /usr/local/cuda/targets/ppc64le-linux/lib/libcuda.so.1
+COPY lib/libnvidia-fatbinaryloader.so.396.15 /usr/local/cuda/targets/ppc64le-linux/lib/libnvidia-fatbinaryloader.so.396.15
 # WORKDIR /root
 # RUN wget https://d3kbcqa49mib13.cloudfront.net/spark-2.2.0-bin-hadoop2.7.tgz
 # RUN tar -xvf spark-2.2.0-bin-hadoop2.7.tgz
 
-RUN echo "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:/usr/local/cuda/targets/ppc64le-linux/lib/" >> /etc/profile
+RUN echo "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:/usr/lib64/:/usr/local/cuda/targets/ppc64le-linux/lib/" >> /etc/profile
 
