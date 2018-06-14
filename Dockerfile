@@ -91,7 +91,6 @@ RUN pip install cython
 RUN pip install pyspark
 RUN pip install ibmseti
 RUN pip install python-resize-image
-RUN conda install -y protobuf
 
 COPY lib/libcuda.so.1 /usr/local/cuda/targets/ppc64le-linux/lib/libcuda.so.1
 COPY lib/libnvidia-fatbinaryloader.so.396.15 /usr/local/cuda/targets/ppc64le-linux/lib/libnvidia-fatbinaryloader.so.396.15
